@@ -37,6 +37,7 @@ button{
     font-weight: 400;
     border-radius: 1rem;
     margin-right: 10px;
+    margin-bottom: 1rem;
 }
 button:hover{
     scale: 103%;
