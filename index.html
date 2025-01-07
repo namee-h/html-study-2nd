@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="button-area">
+      <button onclick="Challenge1()">Challenge1</button>
+      <button onclick="Challenge2()">Challenge2</button>
+      <span>(❁´◡`❁) 처음에는 버튼을 두 번 클릭하시면 과제가 보입니다.😉</span>
+      <p>😢한 번 클릭해서 나오게 하고 싶었는데 실패했습니다😢</p>
+    </div>
+    <div class="challenge1">
+      <div>
+        <div class="box red">Box 1</div>
+        <div class="box green">Box 2</div>
+        <div class="box blue">Box 3</div>
+      </div>
+      <div>
+        <h2>다른점은?</h2>
+        <h3>display:none;</h3>
+        <div>사용하면 화면에서 아예 사라짐 아래 있는 텍스트가 위로 당겨짐</div>
+        <h3>visibility:hidden;</h3>
+        <div>사용하면 화면에서는 사라지지만 원래 박스 영역은 그대로 있음</div>
+        <div>텍스트가 움직이지 않음</div>
+      </div>
+    </div>
+
+    <div class="challenge2">
+      <h1>HTML Tutorial</h1>
+      <p class="sub-header">
+        HTML is the standard markup language for Web pages. With HTML you can
+        create your own Website. HTML is easy to learn - You will enjoy it!
+      </p>
+      <p>
+        The HyperText Markup Language, or HTML is the standard markup language
+        for documents designed to be displayed in a web browser. It can be
+        assisted by technologies such as Cascading Style Sheets (CSS) and
+        scripting languages such as JavaScript. ... HTML elements are the
+        building blocks of HTML pages.
+      </p>
+      <h1>CSS Tutorial</h1>
+      <p class="sub-header">
+        CSS is the language we use to style an HTML document.CSS describes how
+        HTML elements should be displayed.This tutorial will teach you CSS from
+        basic to advanced.
+      </p>
+      <p>
+        Cascading Style Sheets (CSS) is a style sheet language used for
+        describing the presentation of a document written in a markup language
+        such as HTML. CSS is a cornerstone technology of the World Wide Web,
+        alongside HTML and JavaScript.
+      </p>
+    </div>
+
+    <script>
+      //   function Challenge1() {
+      //     console.log("zmfflr?")
+      //     const element = document.querySelector(".challenge1");
+      //     const isHidden = element.getAttribute("data-hidden") === "true";
+
+      //     if (isHidden) {
+      //       element.style.display = "flex";
+      //       element.setAttribute("data-hidden", "false");
+      //     } else {
+      //       element.style.display = "none";
+      //       element.setAttribute("data-hidden", "true");
+      //     }
+      //   }
+
+      //   function Challenge2() {
+      //     const element = document.querySelector(".challenge2");
+      //     const isHidden = element.getAttribute("data-hidden") === "true";
+
+      //     if (isHidden) {
+      //       element.style.display = "block";
+      //       element.setAttribute("data-hidden", "false");
+      //     } else {
+      //       element.style.display = "none";
+      //       element.setAttribute("data-hidden", "true");
+      //     }
+      //   }
+
+      function Challenge1() {
+        const element = document.querySelector(".challenge1");
+        const currentDisplay = getComputedStyle(element).display;
+        if (element.style.display !== "none") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "flex";
+        }
+      }
+      function Challenge2() {
+        const element = document.querySelector(".challenge2");
+        const currentDisplay = getComputedStyle(element).display;
+        if (element.style.display !== "none") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
