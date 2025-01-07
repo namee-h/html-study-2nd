@@ -10,8 +10,8 @@
     <div class="button-area">
       <button onclick="Challenge1()">Challenge1</button>
       <button onclick="Challenge2()">Challenge2</button>
-      <div>(❁´◡`❁) 처음에는 버튼을 두 번 클릭하시면 과제가 보입니다.😉</div>
-      <div>😢한 번 클릭해서 나오게 하고 싶었는데 실패했습니다😢</div>
+      <div>(❁´◡`❁)버튼을 클릭하시면 과제가 보입니다.😉</div>
+      <!-- <div>😢한 번 클릭해서 나오게 하고 싶었는데 실패했습니다😢</div> -->
     </div>
     <div class="challenge1">
       <div>
@@ -74,6 +74,9 @@
           element.style.display = "block";
         }
       }
+      // gpt 한테 물어서 찾아보다가 그냥 시작하자마자 먼저 한번 호출하게끔 하는 꼼수를 생각해냈습니다 🤣
+      Challenge1();
+      Challenge2();
     </script>
     <script src="main.js"></script>
   </body>
